@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--body-background-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.container{
+  width: var(--width-container);
+  margin: 0 auto;
+}

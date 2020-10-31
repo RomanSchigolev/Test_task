@@ -1,0 +1,8 @@
+@import "variables.css";
+@import "base.css";
+
+@import "blocks/listOfCards.css";
+@import "blocks/listOfOptions.css";
+
+@import "interactive_elements/buttons.css";
+@import "interactive_elements/inputs.css";

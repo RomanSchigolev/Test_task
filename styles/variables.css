@@ -1,0 +1,19 @@
+:root {
+  --width-container: 1170px;
+  --width-main: 870px;
+  --width-filter: 270px;
+
+  --card-info-padding: 15px 77px 20px 15px;
+
+  --gap: 30px;
+
+  --body-background-color: #F4F4F4;
+  --text-filter-color: #3C3C3C;
+  --text-card-color: #000000;
+
+  --text-card-title: 18px;
+  --text-card-deadline: 14px;
+  --text-card-metro: 14px;
+  --text-card-street: 14px;
+  --text-badges: 14px;
+}
