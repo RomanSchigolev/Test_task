@@ -3,7 +3,7 @@
   --width-main: 870px;
   --width-filter: 270px;
 
-  --card-info-padding: 15px 77px 20px 15px;
+  --card-info-padding: 15px 15px 20px;
 
   --gap: 30px;
 
@@ -12,7 +12,7 @@
   --text-card-color: #000000;
 
   --text-card-title: 18px;
-  --text-card-deadline: 14px;
+  --text-card-term: 14px;
   --text-card-metro: 14px;
   --text-card-street: 14px;
   --text-badges: 14px;

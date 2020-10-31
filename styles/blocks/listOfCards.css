@@ -1,0 +1,95 @@
+.card__link {
+  position: relative;
+  color: var(--text-card-color);
+  text-decoration: none;
+  background-color: #FFFFFF;
+  display: block;
+  border-radius: 4px;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card__item {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card__item:hover {
+  box-shadow: 0px 0px 7px 1px #888888;
+  transform: translateY(-10px);
+}
+
+.card__image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card__badges {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.card--badge {
+  padding: 3px 10px;
+  font-size: 14px;
+  line-height: 1.1428;
+  border-radius: 4px;
+}
+
+.card__housing {
+  background-color: #FFCF26;
+  margin-right: 10px;
+}
+
+.card__installment {
+  background-color: #11BE75;
+  color: #FFFFFF;
+}
+
+.card__info {
+  padding: var(--card-info-padding);
+}
+
+.card__info-item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: var(--text-card-title);
+  line-height: 1.166;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__term {
+  font-size: var(--text-card-term);
+  line-height: 1.1428;
+} 
+
+.card__metro {
+  font-size: var(--text-card-metro);
+  line-height: 1.1428;
+}
+
+.card__metro::before {
+  content: "";
+  background-image: url("./../../assets/icons/metro.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 11px;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 10px;
+}
+
+.card__street {
+  color: #777777;
+  font-size: var(--text-card-street);
+  line-height: 1.1428;
+}
