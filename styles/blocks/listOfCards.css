@@ -1,3 +1,7 @@
+.card {
+  margin-right: 30px;
+}
+
 .card__link {
   position: relative;
   color: var(--text-card-color);
@@ -15,6 +19,7 @@
 
 .card__item {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  margin-bottom: 30px;
 }
 
 .card__item:hover {
