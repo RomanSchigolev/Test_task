@@ -8,7 +8,7 @@
   text-decoration: none;
   background-color: #FFFFFF;
   display: block;
-  border-radius: 4px;
+  border-radius: var(--border-rad);
 }
 
 .card__list {
@@ -19,7 +19,8 @@
 
 .card__item {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
-  margin-bottom: 30px;
+  margin-bottom: var(--gap);
+  border-radius: var(--border-rad);
 }
 
 .card__item:hover {
@@ -39,19 +40,19 @@
   left: 15px;
 }
 
-.card--badge {
+.card__badge--common {
   padding: 3px 10px;
-  font-size: 14px;
-  line-height: 1.1428;
-  border-radius: 4px;
+  font-size: var(--fontSize-card-badges);
+  line-height: var(--lineHeight-card-info);
+  border-radius: var(--border-rad);
 }
 
-.card__housing {
+.card__badge-housing {
   background-color: #FFCF26;
   margin-right: 10px;
 }
 
-.card__installment {
+.card__badge-installment {
   background-color: #11BE75;
   color: #FFFFFF;
 }
@@ -67,18 +68,18 @@
 .card__title {
   font-weight: 900;
   font-size: var(--text-card-title);
-  line-height: 1.166;
+  line-height: var(--lineHeight-card-title);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card__term {
-  font-size: var(--text-card-term);
-  line-height: 1.1428;
+  font-size: var(---fontSize-card-info);
+  line-height: var(--lineHeight-card-info);
 } 
 
 .card__metro {
-  font-size: var(--text-card-metro);
-  line-height: 1.1428;
+  font-size: var(--fontSize-card-info);
+  line-height: var(--lineHeight-card-info);
 }
 
 .card__metro::before {
@@ -95,6 +96,6 @@
 
 .card__street {
   color: #777777;
-  font-size: var(--text-card-street);
-  line-height: 1.1428;
+  font-size: var(--fontSize-card-info);
+  line-height: var(--lineHeight-card-info);
 }

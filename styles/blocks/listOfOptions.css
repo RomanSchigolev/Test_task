@@ -1,5 +1,71 @@
-.sidebar {
+.filter {
   min-width: 18.75vw;
   height: 400px;
-  background-color: blueviolet;
+}
+
+.filter__item:not(:last-child) {
+  margin-bottom: var(--gap);
+}
+
+.filter__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.filter__title {
+  font-size: var(--fontSize-filter-title);
+  font-weight: 900;
+  line-height: var(--lineHeight-filter-title);
+}
+
+.filter__options {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid #D6D6D6;
+}
+
+.filter__options:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+
+.filter__options:last-of-type {
+  border-radius: 0 0 4px 4px;
+  border-top: none;
+}
+
+.filter__option {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.filter__option-label {
+  font-size: 14px;
+  line-height: 50px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter__option-label--any {
+  font-size: 15px;
+}
+
+.filter__option-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.filter__option-checkbox:checked + .filter__option-label{
+  background-color: #FFCF26;
+}
+
+.filter__option-label:hover {
+  background-color: #FCDf77;
 }

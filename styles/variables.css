@@ -7,13 +7,22 @@
 
   --gap: 30px;
 
+  --border-rad: 4px;
+
   --body-background-color: #F4F4F4;
   --text-filter-color: #3C3C3C;
   --text-card-color: #000000;
 
-  --text-card-title: 18px;
-  --text-card-term: 14px;
-  --text-card-metro: 14px;
-  --text-card-street: 14px;
-  --text-badges: 14px;
+  --fontSize-card-title: 18px;
+  --fontSize-card-info: 14px;
+  --fontSize-card-badges: 14px;
+
+  --fontSize-filter-title: 18px;
+  --fontSize-filter-option: 16px;
+
+  --lineHeight-card-info: calc(16px / var(--fontSize-card-info));
+  --lineHeight-card-title: calc(21px / var(--fontSize-card-title));
+
+  --lineHeight-filter-title: calc(21px / var(--fontSize-filter-title));
+  --lineHeight-filter-option: calc(18px / var(--fontSize-filter-option));
 }
