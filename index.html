@@ -285,33 +285,34 @@
                     stroke-linejoin="round" />
                 </svg>
               </button>
-              <ul class="filter__options">
+              <ul class="filter__options filter__options--row">
                 <li class="filter__option">
-                  <input type="checkbox" class="filter__option-checkbox" id="filter__option-checkbox-1"
+                  <input type="checkbox" class="filter__checkbox-btn" id="filter__option-checkbox-1"
                     name="filter__option-checkbox-1" value="&lt;10">
-                  <label class="filter__option-label" for="filter__option-checkbox-1">&lt; 10</label>
+                  <label class="filter__label filter__label--btn" for="filter__option-checkbox-1">&lt;
+                    10</label>
                 </li>
                 <li class="filter__option">
-                  <input type="checkbox" class="filter__option-checkbox" id="filter__option-checkbox-2"
+                  <input type="checkbox" class="filter__checkbox-btn" id="filter__option-checkbox-2"
                     name="filter__option-checkbox-2" value="10-20">
-                  <label class="filter__option-label" for="filter__option-checkbox-2">10-20</label>
+                  <label class="filter__label filter__label--btn" for="filter__option-checkbox-2">10-20</label>
                 </li>
                 <li class="filter__option">
-                  <input type="checkbox" class="filter__option-checkbox" id="filter__option-checkbox-3"
+                  <input type="checkbox" class="filter__checkbox-btn" id="filter__option-checkbox-3"
                     name="filter__option-checkbox-3" value="20-30">
-                  <label class="filter__option-label" for="filter__option-checkbox-3">20-30</label>
+                  <label class="filter__label filter__label--btn" for="filter__option-checkbox-3">20-30</label>
                 </li>
                 <li class="filter__option">
-                  <input type="checkbox" class="filter__option-checkbox" id="filter__option-checkbox-4"
+                  <input type="checkbox" class="filter__checkbox-btn" id="filter__option-checkbox-4"
                     name="filter__option-checkbox-4" value="30+">
-                  <label class="filter__option-label" for="filter__option-checkbox-4">30+</label>
+                  <label class="filter__label filter__label--btn" for="filter__option-checkbox-4">30+</label>
                 </li>
               </ul>
-              <ul class="filter__options">
+              <ul class="filter__options filter__options--row">
                 <li class="filter__option">
-                  <input type="checkbox" class="filter__option-checkbox" id="filter__option-checkbox-5"
+                  <input type="checkbox" class="filter__checkbox-btn" id="filter__option-checkbox-5"
                     name="filter__option-checkbox-5" value="Любая">
-                  <label class="filter__option-label filter__option-label--any"
+                  <label class="filter__label filter__label--btn filter__label--any"
                     for="filter__option-checkbox-5">Любая</label>
                 </li>
               </ul>
@@ -324,6 +325,36 @@
                     stroke-linejoin="round" />
                 </svg>
               </button>
+              <ul class="filter__options">
+                <li class="filter__option filter__option--mb">
+                  <label class="filter__label filter__label--radio">
+                    <input type="radio" class="filter__radio-real" name="filter__option--radio" value="Любой">
+                    <span class="filter__radio-mask"></span>
+                    <span class="filter__option-title">Любой</span>
+                  </label>
+                </li>
+                <li class="filter__option filter__option--mb">
+                  <label class="filter__label filter__label--radio">
+                    <input type="radio" class="filter__radio-real" name="filter__option--radio" value="Любой">
+                    <span class="filter__radio-mask"></span>
+                    <span class="filter__option-title">Сдан</span>
+                  </label>
+                </li>
+                <li class="filter__option filter__option--mb">
+                  <label class="filter__label filter__label--radio">
+                    <input type="radio" class="filter__radio-real" name="filter__option--radio" value="Любой">
+                    <span class="filter__radio-mask"></span>
+                    <span class="filter__option-title">В этом году</span>
+                  </label>
+                </li>
+                <li class="filter__option filter__option--mb">
+                  <label class="filter__label filter__label--radio">
+                    <input type="radio" class="filter__radio-real" name="filter__option--radio" value="Любой">
+                    <span class="filter__radio-mask"></span>
+                    <span class="filter__option-title">В следующем году</span>
+                  </label>
+                </li>
+              </ul>
             </li>
           </ul>
         </form>

@@ -21,7 +21,7 @@
   line-height: var(--lineHeight-filter-title);
 }
 
-.filter__options {
+.filter__options--row {
   display: flex;
   overflow: hidden;
   border: 1px solid #D6D6D6;
@@ -38,23 +38,32 @@
 
 .filter__option {
   flex-grow: 1;
+}
+
+.filter__option--mb:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.filter__label {
+  cursor: pointer;
+
   text-align: center;
 }
 
-.filter__option-label {
+.filter__label--btn {
   font-size: 14px;
   line-height: 50px;
   font-weight: 500;
   display: block;
-  cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-.filter__option-label--any {
+.filter__label--any {
   font-size: 15px;
 }
 
-.filter__option-checkbox {
+.filter__checkbox-btn,
+.filter__radio-real {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -62,10 +71,48 @@
   clip: rect(0 0 0 0);
 }
 
-.filter__option-checkbox:checked + .filter__option-label{
+.filter__checkbox-btn:checked + .filter__label--btn{
   background-color: #FFCF26;
 }
 
-.filter__option-label:hover {
+.filter__label--btn:hover {
   background-color: #FCDf77;
+}
+
+.filter__radio-mask {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.filter__option-title {
+  font-size: var(--fontSize-filter-option);
+  line-height: var(--lineHeight-filter-option);
+  color: #3C3C3C;
+}
+
+.filter__radio-real:checked + .filter__radio-mask {
+  background-color: #FFE074;
+}
+
+.filter__radio-real:checked ~ .filter__option-title {
+  font-weight: 500;
+}
+
+.filter__radio-real:checked + .filter__radio-mask::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #3C3C3C;
 }
