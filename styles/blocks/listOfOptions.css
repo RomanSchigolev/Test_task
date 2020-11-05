@@ -8,17 +8,17 @@
 }
 
 .filter__button {
+  font-size: var(--fontSize-filter-title);
+  font-weight: 700;
+  line-height: var(--lineHeight-filter-title);
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-  background-color: transparent;
+  align-items: center;
 }
 
 .filter__title {
-  font-size: var(--fontSize-filter-title);
-  font-weight: 900;
-  line-height: var(--lineHeight-filter-title);
+  margin-bottom: 20px;
 }
 
 .filter__options--row {
@@ -61,14 +61,6 @@
   font-size: 15px;
 }
 
-.filter__input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
 .filter__input--btn:checked + .filter__label--btn{
   background-color: #FFCF26;
 }
@@ -77,71 +69,13 @@
   background-color: #FCDf77;
 }
 
-.filter__radio-mask {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #FFFFFF;
-  border: 1px solid #777777;
-  border-radius: 50%;
-  margin-right: 10px;
-  vertical-align: bottom;
-}
-
 .filter__option-title {
   font-size: var(--fontSize-filter-option);
   line-height: var(--lineHeight-filter-option);
   color: #3C3C3C;
 }
 
-.filter__input--radio:checked + .filter__radio-mask,
-.filter__input--checkbox:checked + .filter__checkbox-mask {
-  background-color: #FFE074;
-}
-
 .filter__input--radio:checked ~ .filter__option-title,
 .filter__input--checkbox:checked ~ .filter__option-title {
   font-weight: 500;
-}
-
-.filter__input--radio:checked + .filter__radio-mask::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: #3C3C3C;
-}
-
-.filter__checkbox-mask {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #FFFFFF;
-  border: 1px solid #777777;
-  border-radius: 2px;
-  margin-right: 10px;
-  vertical-align: bottom;
-}
-
-.filter__input--checkbox:checked + .filter__checkbox-mask {
-  background-image: url("../../assets/icons/check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.filter__option-more {
-  background-color: transparent;
-  color: #4290C9;
-  font-size: 16px;
-  line-height: 1.1875;
-}
-
-.filter__option-more:hover {
-  text-decoration: underline;
 }
