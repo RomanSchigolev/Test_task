@@ -1,6 +1,5 @@
 .filter {
-  min-width: 18.75vw;
-  height: 400px;
+  min-width: 240px;
 }
 
 .filter__item:not(:last-child) {
