@@ -47,3 +47,35 @@
 .filter__input--checkbox:checked + .filter__checkbox-mask {
   background-color: #FFE074;
 }
+
+.filter__toggle-mask {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: #C4C4C4;
+  border-radius: 10px;
+  vertical-align: bottom;
+  transition: background-color 0.2s ease;
+}
+
+.filter__toggle-mask::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: #3C3C3C;
+  border-radius: 50%;
+  transition: left 0.2s ease;
+}
+
+.filter__input--toggle:checked + .filter__toggle-mask {
+  background-color: #FFE074;  
+}
+
+.filter__input--toggle:checked + .filter__toggle-mask::before {
+  left: 19px;
+}

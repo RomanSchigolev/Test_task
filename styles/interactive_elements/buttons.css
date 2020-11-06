@@ -34,3 +34,40 @@
 .option__button--more:hover {
   text-decoration: underline;
 }
+
+.filter__button {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 20px;
+  border-radius: 4px;
+  font-size: var(--fontSize-filter-option);
+  line-height: var(--lineHeight-filter-option);
+  transition: background-color 0.2s ease;
+}
+
+.filter__button:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.filter__button--apply {
+  background-color: #FFCF26;
+}
+
+.filter__button--apply:hover {
+  background-color: #f1be03;
+}
+
+.filter__button--reset svg {
+  margin-right: 6px;
+}
+
+.filter__button--reset {
+  border: 1px solid #D6D6D6;
+}
+
+.filter__button--reset:hover {
+  background-color: #D6D6D6;
+}

@@ -7,7 +7,7 @@
   margin-bottom: var(--gap);
 }
 
-.filter__button {
+.filter__name-button {
   font-size: var(--fontSize-filter-title);
   font-weight: 700;
   line-height: var(--lineHeight-filter-title);
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.filter__title {
+.filter__name {
   margin-bottom: 20px;
 }
 

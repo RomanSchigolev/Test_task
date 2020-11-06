@@ -278,8 +278,8 @@
         <form class="filter__form">
           <ul class="filter__list">
             <li class="filter__item">
-              <h3 class="filter__title">
-                <button type="button" class="filter__button">
+              <h3 class="filter__name">
+                <button type="button" class="filter__name-button">
                   Близость к метро
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 15L12 9L6 15" stroke="black" stroke-width="2" stroke-linecap="round"
@@ -320,8 +320,8 @@
               </ul>
             </li>
             <li class="filter__item">
-              <h3 class="filter__title">
-                <button type="button" class="filter__button">
+              <h3 class="filter__name">
+                <button type="button" class="filter__name-button">
                   Срок сдачи
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 15L12 9L6 15" stroke="black" stroke-width="2" stroke-linecap="round"
@@ -339,21 +339,21 @@
                 </li>
                 <li class="filter__option filter__option--mb">
                   <label class="filter__label filter__label--radio">
-                    <input type="radio" class="filter__input filter__input--radio" value="Любой">
+                    <input type="radio" class="filter__input filter__input--radio" value="Сдан">
                     <span class="filter__radio-mask filter__common-mask"></span>
                     <span class="filter__option-title">Сдан</span>
                   </label>
                 </li>
                 <li class="filter__option filter__option--mb">
                   <label class="filter__label filter__label--radio">
-                    <input type="radio" class="filter__input filter__input--radio" value="Любой">
+                    <input type="radio" class="filter__input filter__input--radio" value="В этом году">
                     <span class="filter__radio-mask filter__common-mask"></span>
                     <span class="filter__option-title">В этом году</span>
                   </label>
                 </li>
                 <li class="filter__option filter__option--mb">
                   <label class="filter__label filter__label--radio">
-                    <input type="radio" class="filter__input filter__input--radio" value="Любой">
+                    <input type="radio" class="filter__input filter__input--radio" value="В следующем году">
                     <span class="filter__radio-mask filter__common-mask"></span>
                     <span class="filter__option-title">В следующем году</span>
                   </label>
@@ -361,8 +361,8 @@
               </ul>
             </li>
             <li class="filter__item">
-              <h3 class="filter__title">
-                <button type="button" class="filter__button">
+              <h3 class="filter__name">
+                <button type="button" class="filter__name-button">
                   Дополнительные опции
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18 15L12 9L6 15" stroke="black" stroke-width="2" stroke-linecap="round"
@@ -373,41 +373,71 @@
               <ul class="filter__options">
                 <li class="filter__option filter__option--mb">
                   <label class="filter__label filter__label--radio">
-                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Любой">
+                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Двор без машин">
                     <span class="filter__checkbox-mask filter__common-mask"></span>
                     <span class="filter__option-title">Двор без машин</span>
                   </label>
                 </li>
                 <li class="filter__option filter__option--mb">
                   <label class="filter__label filter__label--radio">
-                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Любой">
+                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Высокие потолки">
                     <span class="filter__checkbox-mask filter__common-mask"></span>
                     <span class="filter__option-title">Высокие потолки</span>
                   </label>
                 </li>
                 <li class="filter__option filter__option--mb">
                   <label class="filter__label filter__label--radio">
-                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Любой">
+                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Панорамные окна">
                     <span class="filter__checkbox-mask filter__common-mask"></span>
                     <span class="filter__option-title">Панорамные окна</span>
                   </label>
                 </li>
                 <li class="filter__option filter__option--mb">
                   <label class="filter__label filter__label--radio">
-                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Любой">
+                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Есть кладовые">
                     <span class="filter__checkbox-mask filter__common-mask"></span>
                     <span class="filter__option-title">Есть кладовые</span>
                   </label>
                 </li>
                 <li class="filter__option filter__option--mb">
                   <label class="filter__label filter__label--radio">
-                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Любой">
+                    <input type="checkbox" class="filter__input filter__input--checkbox" value="Малоэтажный">
                     <span class="filter__checkbox-mask filter__common-mask"></span>
                     <span class="filter__option-title">Малоэтажный</span>
                   </label>
                 </li>
                 <li class="filter__option">
                   <button type="button" class="option__button option__button--more">Показать ещё</button>
+                </li>
+              </ul>
+            </li>
+            <li class="filter__item">
+              <ul class="filter__options">
+                <li class="filter__option">
+                  <label class="filter__label filter__label--radio">
+                    <input type="checkbox" class="filter__input filter__input--checkbox filter__input--toggle"
+                      value="Услуги 0%">
+                    <span class="filter__toggle-mask"></span>
+                    <span class="filter__option-title">Услуги 0%</span>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="filter__item">
+              <ul class="filter__options">
+                <li class="filter__option">
+                  <button type="submit" class="filter__button filter__button--apply">
+                    <span>Применить фильтры</span>
+                  </button>
+                  <button type="reset" class="filter__button filter__button--reset">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18 6L6 18" stroke="#3C3C3C" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M6 6L18 18" stroke="#3C3C3C" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                    <span>Сбросить фильтры</span>
+                  </button>
                 </li>
               </ul>
             </li>
