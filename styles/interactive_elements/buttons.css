@@ -35,6 +35,16 @@
   text-decoration: underline;
 }
 
+.filter__name-button {
+  font-size: var(--fontSize-filter-title);
+  font-weight: 700;
+  line-height: var(--lineHeight-filter-title);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .filter__button {
   width: 100%;
   height: 50px;

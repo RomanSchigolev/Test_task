@@ -6,16 +6,6 @@
   margin-bottom: var(--gap);
 }
 
-.filter__name-button {
-  font-size: var(--fontSize-filter-title);
-  font-weight: 700;
-  line-height: var(--lineHeight-filter-title);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .filter__name {
   margin-bottom: 20px;
 }
