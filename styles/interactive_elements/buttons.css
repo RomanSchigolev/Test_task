@@ -45,6 +45,10 @@
   align-items: center;
 }
 
+.filter__name-icon.filter__name-icon--down {
+  transform: rotate(180deg);
+}
+
 .filter__button {
   width: 100%;
   height: 50px;

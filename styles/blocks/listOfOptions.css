@@ -16,6 +16,25 @@
   border: 1px solid #D6D6D6;
 }
 
+.filter__options--toggle {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.filter__item--accordion.filter__item--open .filter__options--toggle {
+  max-height: 100%;
+  visibility: visible;
+}
+
+.filter__name-icon {
+  transition: transform 0.2s linear;
+}
+
+.filter__item--accordion.filter__item--open .filter__name-icon {
+  transform: rotate(180deg);
+}
+
 .filter__options:first-of-type {
   border-radius: 4px 4px 0 0;
 }
