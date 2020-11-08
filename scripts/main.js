@@ -22,5 +22,15 @@
         filterMetroCheckbox.disabled = false;
       }
     })
-  })
+  });
+
+  const buttonMoreOption = document.querySelector(".option__button--more");
+  const hiddenFilterOptions = document.querySelectorAll(".filter__option--hidden");
+
+  buttonMoreOption.addEventListener("click", function () {
+    hiddenFilterOptions.forEach(hiddenFilterOption => {
+      hiddenFilterOption.style.display = "block";
+    });
+    this.style.display = "none";
+  });
 })();
