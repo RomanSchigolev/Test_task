@@ -38,7 +38,7 @@
 }
 
 .filter__input--checkbox:checked + .filter__checkbox-mask {
-  background-image: url("../../assets/icons/check.svg");
+  background-image: url("../assets/icons/check.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

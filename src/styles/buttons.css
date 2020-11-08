@@ -14,7 +14,7 @@
 }
 
 .card__button--more:hover {
-  box-shadow: 0 0px 4px 1px #888888;
+  box-shadow: 0 0 4px 1px #888888;
 }
 
 .card__button--more:active {
